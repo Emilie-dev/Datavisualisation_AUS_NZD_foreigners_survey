@@ -761,7 +761,7 @@ function createChart(results) {
 	var ctx3 = document.getElementById('testNationalities').getContext('2d');
 	var myBarChart = new Chart(ctx3, {
 	// The type of chart we want to create
-	type: 'bar',
+	type: 'pie',
 	// The data for our dataset
 	data: {
 	    labels: Object.keys(uniqueNationality),
@@ -774,7 +774,7 @@ function createChart(results) {
 	// Configuration options go here
 	options: {
 	    legend: {
-	        display: false,
+	        // display: false,
 	    },
 	// We add a title to the chart
 	title: {
